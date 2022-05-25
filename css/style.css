@@ -150,6 +150,34 @@ h4{
     max-width: 700px;
     max-height: 100px;
 }
+/* boton de enviar con gradiante */
+.submit{
+    background-image: 
+    linear-gradient(to right top ,
+    #252525, 
+    #157317,
+    #53d49c);
+    background-size: 400%;
+    width: 80px;
+    height: 40px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+
+}
+.submit:hover{
+    animation: forwards animate 0.8s;
+}
+@keyframes animate{
+    0%{
+        background-position: left;
+        
+    }    
+    100%{
+        background-position: right;
+        transform: translateY(-3px);
+    }
+}
+/* FOOTER GENERAL */
 footer{
     background-color: #3A6351;
     padding: 20px;
