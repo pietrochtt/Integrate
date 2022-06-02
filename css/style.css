@@ -34,12 +34,18 @@ header{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 450px; */
 }
+.iniciow{
+    width: 99% ;
+}
 .tituloinicio{
     display: flex;
     align-items: center;
     padding-left: 40px;
     font-size: 25px;
     font-family: 'Bebas Neue', cursive;
+}
+.tituloquehacemos{
+    font-size: 35px;
 }
 .img1{
     width: 400px;
@@ -181,7 +187,9 @@ footer{
     padding: 20px;
     text-align: right;
     font-family: 'Bebas Neue', cursive;
-    font-size: 20pxpx;
+}
+footer h3{
+    font-size: 22px;
 }
 footer i{
     font-size: 35px;
@@ -191,7 +199,7 @@ footer i:hover{
     color: white;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 599px) {
+@media only screen and (min-width: 320px) and (max-width: 575px) {
     /* PAGINA INICIO */
     header{
         font-size: 30px;
@@ -213,25 +221,22 @@ footer i:hover{
     .tituloinicio{
         grid-row: 1/2;
         font-size: 15px;
+        text-align: center;
+        justify-items: center;
+        padding-top: 20px;
+        margin: 0px;
     }
     .img1{
         grid-row: 2/3;
         height: 250px;
-        width: 250px;
-    }
-    footer{
-        padding: 10px;
-        font-size: 13px;
-        text-align: center;
-    }
-    footer i{
-        font-size: 20px;
+        width: 300px;
+        margin-right: 0px;
     }
     /* PAGINA QUE HACEMOS */
     .quehacemos{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 100px;
+        grid-template-rows: 400px 200px;
         justify-items: center;
         align-items: center;
         padding-left: 0%;
@@ -298,5 +303,39 @@ footer i:hover{
     .textarea{
         max-width: 200px;
         max-height: 100px;
+    }
+    /* FOOTER */
+    footer{
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+    footer i{
+        font-size: 20px;
+    }
+    footer h3{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 810px){
+    .img1{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 860px){
+    .textopag2{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .textopag2{
+        font-size: 15px;
+    }
+    .tituloquehacemos{
+        font-size: 25px;
+    }
+    .textnav{
+        font-size: 15px;
     }
 }
