@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap');
+
+// Variables
+
+$color1:#3A6351;
+$color2: #D3E4CD;
 
 * {
     margin: 0;
@@ -6,7 +11,7 @@
 }
 
 header {
-    background-color: #3A6351;
+    background-color: $color1;
     text-align: center;
     color: white;
     font-size: 50px;
@@ -14,9 +19,9 @@ header {
 }
 
 .navbar {
-    background-color: #D3E4CD;
+    background-color: $color2;
     text-align: center;
-    font-family: "Orelega One", cursive;
+    font-family: 'Orelega One', cursive;
     text-align: center;
 }
 
@@ -25,20 +30,22 @@ header {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-}
 
-.textnav:hover {
-    color: white;
+    &:hover {
+        color: white;
+    }
 }
 
 /* PAGINAS 1 Y 2 */
+
 .inicio {
-    background-color: #D3E4CD;
+    background-color: $color2;
     padding-bottom: 30px;
     padding-top: 30px;
+
     /* display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 450px; */
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 450px; */
 }
 
 .iniciow {
@@ -50,7 +57,7 @@ header {
     align-items: center;
     padding-left: 40px;
     font-size: 25px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .tituloquehacemos {
@@ -67,12 +74,13 @@ header {
 .textopag2 {
     padding-left: 40px;
     font-size: 25px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
 }
 
 /* PAGINAS PRODUCTOS */
+
 .productos {
-    background-color: #D3E4CD;
+    background-color: $color2;
     padding-bottom: 30px;
     padding-top: 30px;
     display: grid;
@@ -85,7 +93,7 @@ header {
     padding-left: 40px;
     padding-bottom: 15px;
     font-size: 25px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     grid-area: t1;
 }
 
@@ -131,7 +139,7 @@ header {
 
 h4 {
     font-size: 15px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     padding-left: 100px;
     padding-bottom: 10px;
 }
@@ -148,12 +156,13 @@ h4 {
     padding-left: 40px;
     padding-bottom: 20px;
     font-size: 15px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
 }
 
 /* PAGINA CONTACTO */
+
 .contacto {
-    background-color: #D3E4CD;
+    background-color: $color2;
     padding-bottom: 15px;
     padding-top: 30px;
     display: flex;
@@ -165,14 +174,14 @@ h4 {
     padding-left: 40px;
     padding-bottom: 20px;
     font-size: 40px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .contenidocontacto {
     padding-left: 40px;
     padding-bottom: 20px;
     font-size: 15px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     font-weight: bold;
 }
 
@@ -182,17 +191,18 @@ h4 {
 }
 
 /* boton de enviar con gradiante */
+
 .submit {
     background-image: linear-gradient(to right top, #252525, #157317, #53d49c);
     background-size: 400%;
     width: 80px;
     height: 40px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     color: white;
-}
 
-.submit:hover {
-    animation: forwards animate 0.8s;
+    &:hover {
+        animation: forwards animate 0.8s;
+    }
 }
 
 @keyframes animate {
@@ -207,29 +217,30 @@ h4 {
 }
 
 /* FOOTER GENERAL */
+
 footer {
-    background-color: #3A6351;
+    background-color: $color1;
     padding: 20px;
     text-align: right;
-    font-family: "Bebas Neue", cursive;
-}
+    font-family: 'Bebas Neue', cursive;
 
-footer h3 {
-    font-size: 22px;
-}
+    h3 {
+        font-size: 22px;
+    }
 
-footer i {
-    font-size: 35px;
-    color: black;
-}
+    i {
+        font-size: 35px;
+        color: black;
 
-footer i:hover {
-    color: white;
+        &:hover {
+            color: white;
+        }
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 575px) {
-
     /* PAGINA INICIO */
+
     header {
         font-size: 30px;
         padding: 50px;
@@ -267,6 +278,7 @@ footer i:hover {
     }
 
     /* PAGINA QUE HACEMOS */
+
     .quehacemos {
         display: grid;
         grid-template-columns: 1fr;
@@ -276,21 +288,22 @@ footer i:hover {
         padding-left: 0%;
         padding-top: 5px;
         padding-right: 20px;
-    }
 
-    .quehacemos img {
-        display: none;
+        img {
+            display: none;
+        }
     }
 
     .textopag2 {
+        h2 {
+            font-size: 35px;
+        }
+
         font-size: 20px;
     }
 
-    .textopag2 h2 {
-        font-size: 35px;
-    }
-
     /* PAGINAS PRODUCTOS */
+
     .productos {
         display: flex;
         flex-direction: column;
@@ -298,10 +311,10 @@ footer i:hover {
         padding-right: 15px;
         justify-items: center;
         align-items: center;
-    }
 
-    .productos h2 {
-        font-size: 30px;
+        h2 {
+            font-size: 30px;
+        }
     }
 
     h4 {
@@ -315,12 +328,14 @@ footer i:hover {
     }
 
     /* solucion de errores de productos desalineados */
+
     .p3,
     .p7 {
         width: 200px;
     }
 
     /* PAGINA CONTACTO */
+
     .contacto {
         padding-top: 5px;
         display: flex;
@@ -351,18 +366,19 @@ footer i:hover {
     }
 
     /* FOOTER */
+
     footer {
         padding: 10px;
         font-size: 13px;
         text-align: center;
-    }
 
-    footer i {
-        font-size: 20px;
-    }
+        i {
+            font-size: 20px;
+        }
 
-    footer h3 {
-        font-size: 17px;
+        h3 {
+            font-size: 17px;
+        }
     }
 }
 
@@ -392,5 +408,3 @@ footer i:hover {
         font-size: 15px;
     }
 }
-
-/*# sourceMappingURL=style.css.map */
