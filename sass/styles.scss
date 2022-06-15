@@ -48,11 +48,19 @@ header {
     grid-template-rows: 450px; */
 }
 
-.iniciow {
-    width: 99%;
-}
+// .iniciow {
+//     width: 99%;
+//     padding-right: 0%;
+// }
+
+//mixin fallido, envie captura por md german para que vieras si sabes de que se trata el error
+// @mixin fonts ($fontsize, $fontfamily) {
+//     font-size: $fontsize;
+//     font-family: $fontfamily;
+// }
 
 .tituloinicio {
+    // @include fonts(25px, 'Bebas Neue', cursive);
     display: flex;
     align-items: center;
     padding-left: 40px;
@@ -61,7 +69,7 @@ header {
 }
 
 .tituloquehacemos {
-    font-size: 35px;
+    font-size: 60px;
 }
 
 .img1 {
@@ -84,8 +92,8 @@ header {
     padding-bottom: 30px;
     padding-top: 30px;
     display: grid;
-    grid-template-areas: "t1 t1"" p1 p2"" p3 p4"" p5 p5";
-    grid-template-columns: fr 1fr;
+    grid-template-areas: "t1 t1" "p1 p2" "p3 p4" "p5 p5";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 90px 350px 350px 350px;
 }
 
@@ -95,6 +103,10 @@ header {
     font-size: 25px;
     font-family: 'Bebas Neue', cursive;
     grid-area: t1;
+}
+
+.tituloalgodulce {
+    @extend .tituloproducto
 }
 
 .p1 {
