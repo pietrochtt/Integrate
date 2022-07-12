@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap");
+* {
+  margin: 0;
+  margin: 0%;
+}
+
+body {
+  background-color: #D3E4CD;
+}
+
+header {
+  background-color: #3A6351;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  padding: 60px 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.nav .navItem {
+  margin: 10px;
+  text-decoration: none;
+}
+.nav .navItem .textnav {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-family: "Orelega One", cursive;
+}
+.nav .navItem .textnav:hover {
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background-color: #3A6351;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .integrate {
+  font-size: 30px;
+}
+footer .redes {
+  font-family: "Bebas Neue", cursive;
+}
+footer .redes h3 {
+  font-size: 30px;
+  color: #000;
+}
+footer .redes .iconoredes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+footer i {
+  font-size: 35px;
+  color: black;
+}
+footer i:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  header {
+    font-size: 40px;
+    margin: 0px;
+  }
+  .nav {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .nav .navItem {
+    margin: 5px;
+    width: 100%;
+    border-bottom: #3A6351 solid;
+  }
+  .nav .navItem .textnav {
+    font-size: 15px;
+  }
+  footer {
+    margin: 0px;
+    font-size: 13px;
+    justify-content: center;
+  }
+  footer .redes .iconoredes {
+    justify-content: center;
+  }
+  footer .redes h3 {
+    font-size: 27px;
+  }
+  footer .integrate {
+    display: none;
+  }
+  footer i {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .integrate {
+    display: none;
+  }
+  .nav {
+    justify-content: center;
+    margin: 0;
+  }
+  footer {
+    margin: 0px;
+    justify-content: center;
+  }
+  footer .redes .iconoredes {
+    justify-content: center;
+  }
+  footer .integrate {
+    display: none;
+  }
+}
+.inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.inicio .tituloinicio {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  font-size: 55px;
+  font-family: "Bebas Neue", cursive;
+}
+.inicio .carousel {
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+.inicio .carousel .imginicio {
+  width: 500px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .inicio .tituloinicio {
+    font-size: 35px;
+    text-align: center;
+    margin: 0 15px;
+  }
+  .inicio .carousel {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  /* PAGINA INICIO */
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .inicio .tituloinicio {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+  }
+  .inicio .carousel {
+    width: 400px;
+    height: 400px;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .tituloinicio {
+    font-size: 40px;
+  }
+  .carousel {
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
+  .carousel .imginicio {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* PAGINA CONTACTO */
+.contacto {
+  margin-bottom: 15px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .titulocontacto {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+}
+.contacto .textopag5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  margin: 0 50px;
+}
+.contacto .contenidocontacto {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+}
+.contacto .contenidocontacto .form {
+  display: flex;
+  flex-direction: column;
+}
+.contacto .contenidocontacto .form .textarea {
+  max-height: 100px;
+  min-height: 100px;
+}
+.contacto .contenidocontacto .form .label {
+  margin-top: 15px;
+}
+.contacto .contenidocontacto .form .inline {
+  display: inline-block;
+}
+
+/* Boton de enviar con gradiante */
+.submit {
+  background-image: linear-gradient(to right top, #252525, #157317, #53d49c);
+  background-size: 400%;
+  width: 120px;
+  height: 40px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  margin-top: 10px;
+}
+.submit:hover {
+  animation: forwards animate 0.8s;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+    transform: translateY(-3px);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  /* PAGINA CONTACTO */
+  .contacto {
+    margin-top: 5px;
+  }
+  .contacto .titulocontacto {
+    font-size: 50px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .contacto .textopag5 {
+    margin: 0 35px;
+  }
+  .contacto .contenidocontacto {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .contacto .contenidocontacto .form .textarea {
+    max-width: 300px;
+    max-height: 100px;
+  }
+  .submit {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .contacto {
+    margin: 10px;
+  }
+  .contacto .textopag5 {
+    margin: 0 35px;
+  }
+  .contacto .contenidocontacto .form .textarea {
+    max-width: 450px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacto .contenidocontacto .form .textarea {
+    max-width: 550px;
+  }
+}
+.inicio {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.inicio .textopag2 {
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  margin: 0 40px;
+}
+.inicio .textopag2 .tituloquehacemos {
+  font-size: 70px;
+}
+.inicio .imgquehacemos {
+  width: 500px;
+  height: 400px;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  /* PAGINA QUE HACEMOS */
+  .quehacemos {
+    height: 500px;
+  }
+  .quehacemos img {
+    display: none;
+  }
+  .quehacemos .textopag2 {
+    margin: 0 35px;
+    font-size: 25px;
+  }
+  .quehacemos .textopag2 h2 {
+    font-size: 55px;
+  }
+  .quehacemos .imgquehacemos {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 860px) {
+  .quehacemos .textopag2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .quehacemos .textopag2 {
+    font-size: 15px;
+  }
+  .quehacemos .textopag2 .tituloquehacemos {
+    font-size: 45px;
+  }
+  .quehacemos .imgquehacemos {
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
+}
+/* PAGINAS PRODUCTOS Y ALGO DULCE */
+.tituloproducto, .tituloalgodulce {
+  margin-bottom: 30px;
+}
+.tituloproducto h2, .tituloalgodulce h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.tituloalgodulce .textopag4 {
+  font-size: 15px;
+  font-family: "Bebas Neue", cursive;
+  margin: 0%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.containerProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.containerProducts .productos {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 300px;
+  grid-row-gap: 100px;
+}
+.containerProducts .productos h4 {
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 10px;
+}
+.containerProducts .productos .imgproductos {
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  /* PAGINAS PRODUCTOS */
+  .containerProducts .productos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-items: center;
+    align-items: center;
+  }
+  .containerProducts .productos h4 {
+    margin-left: 0;
+  }
+  .containerProducts .productos .imgproductos {
+    width: 250px;
+    height: 250px;
+    margin-left: 0;
+  }
+  .tituloproducto h2, .tituloalgodulce h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .containerProducts .productos {
+    grid-column-gap: 75px;
+  }
+  .containerProducts .productos .imgproductos {
+    width: 225px;
+    height: 225px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .containerProducts .productos {
+    grid-column-gap: 150px;
+  }
+  .containerProducts .productos .imgproductos {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .containerProducts .productos {
+    grid-column-gap: 150px;
+  }
+  .containerProducts .productos .imgproductos {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

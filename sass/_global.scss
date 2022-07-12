@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap');
+
+* {
+    margin: 0;
+    margin: 0%;
+}
+
+body {
+    background-color: #D3E4CD;
+}
+
+//HEADER
+
+header {
+    background-color: #3A6351;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    padding: 60px 0;
+}
+
+// NAV
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    .navItem{
+        margin: 10px;
+        text-decoration: none;
+        .textnav{
+            text-decoration: none;
+            color: #000;
+            font-size: 17px;
+            font-family: 'Orelega One', cursive;
+                &:hover {
+            color: white;
+        }
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #3A6351;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .integrate {
+        font-size: 30px;
+    }
+
+    .redes {
+        font-family: 'Bebas Neue', cursive;
+
+        h3 {
+            font-size: 30px;
+            color: #000;
+        }
+
+        .iconoredes {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+
+
+
+    i {
+        font-size: 35px;
+        color: black;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    //HEADER
+    header {
+        font-size: 40px;
+        margin: 0px;
+    }
+
+    //NAV
+    .nav {
+        flex-direction: column;
+        margin: 20px;
+        .navItem {
+            margin: 5px;
+            width: 100%;
+            border-bottom: #3A6351 solid ;
+            .textnav{
+                font-size: 15px;
+            }
+        }
+    }
+
+    //FOOTER
+    footer {
+        margin: 0px;
+        font-size: 13px;
+        // text-align: center;
+        justify-content: center;
+
+        .redes {
+            .iconoredes{
+                justify-content: center;
+            }
+
+            h3 {
+                font-size: 27px;
+            }
+        }
+
+        .integrate {
+            display: none;
+        }
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    //HEADER
+    .integrate {
+        display: none;
+    }
+    
+    //NAV
+    .nav {
+        justify-content: center;
+        margin: 0;
+    }
+
+    //FOOTER
+    footer {
+        margin: 0px;
+        // text-align: center;
+        justify-content: center;
+
+        .redes {
+            .iconoredes {
+                justify-content: center;
+            }
+        }
+
+        .integrate {
+            display: none;
+        }
+    }
+}
